@@ -7,8 +7,8 @@ public class Prob10996 {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         StringBuilder sb = new StringBuilder();
         int n = Integer.parseInt(br.readLine());
-        StringBuilder sb1 = new StringBuilder();
-        StringBuilder sb2 = new StringBuilder();
+        StringBuilder sb1 = new StringBuilder(); // "* * * ..."
+        StringBuilder sb2 = new StringBuilder(); // " * * *..."
 
         for (int i = 0; i < n; i++) {
             if (i % 2 == 0) {
@@ -19,6 +19,8 @@ public class Prob10996 {
                 sb2.append('*');
             }
         }
+
+        // n번 반복
         for (int i = 0; i < n; i++) {
             sb.append(sb1).append('\n').append(sb2).append('\n');
         }

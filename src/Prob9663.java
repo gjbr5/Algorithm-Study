@@ -5,21 +5,23 @@ import java.io.InputStreamReader;
 public class Prob9663 {
 
     private static int find(int[] arr, int depth) {
-        if (depth == arr.length)
+        if (depth == arr.length) // 완성
             return 1;
         int cnt = 0;
         for (int i = 0; i < arr.length; i++) {
-            arr[depth] = i;
+            arr[depth] = i; // 퀸 두기(depth행 i열)
             for (int j = 0; j < depth; j++) {
-                if (arr[depth] == arr[j] || depth - j == Math.abs(arr[depth] - arr[j])) {
+                if (arr[depth] == arr[j] // 수직으로 만나는지 검사
+                        || depth - j == Math.abs(arr[depth] - arr[j])) // 대각선으로 만나는지 검사
+                {
                     arr[depth] = -1;
                     break;
                 }
             }
-            if (arr[depth] != -1)
-                cnt += find(arr, depth + 1);
+            if (arr[depth] != -1) // 만나지 않는다면
+                cnt += find(arr, depth + 1); // 다음 행 찾기
         }
-        return cnt;
+        return cnt; // 최종 결과 합산
     }
 
     public static void main(String[] args) throws IOException {

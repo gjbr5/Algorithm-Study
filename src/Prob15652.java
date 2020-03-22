@@ -9,13 +9,13 @@ public class Prob15652 {
     private static StringBuilder sb = new StringBuilder();
 
     private static void find(int[] arr, int depth) {
-        if (arr.length == depth) {
-            append(arr);
+        if (arr.length == depth) { // 수열을 찾은 경우
+            append(arr); // 출력
             return;
         }
         for (int i = depth == 0 ? 1 : arr[depth - 1]; i <= n; i++) {
-            arr[depth] = i;
-            find(arr, depth + 1);
+            arr[depth] = i; // 순서대로 수 선택
+            find(arr, depth + 1); // 수열의 다음 수 선택
         }
     }
 
