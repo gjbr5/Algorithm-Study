@@ -1,5 +1,3 @@
-import Problem01000s.Prob1021;
-
 import java.io.IOException;
 
 public class Main {
@@ -7,6 +5,8 @@ public class Main {
 //        Failed
 
 //        Success
-        Prob1021.main(args);
+//        Problem01000s.Prob1260.main(args);
+//        Problem01000s.Prob1874.main(args);
+//        Problem18000s.Prob18258.main(args);
     }
 }
