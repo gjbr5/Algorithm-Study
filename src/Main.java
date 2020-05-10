@@ -5,8 +5,10 @@ public class Main {
 //        Failed
 
 //        Success
-//        Problem01000s.Prob1260.main(args);
-//        Problem01000s.Prob1874.main(args);
-//        Problem18000s.Prob18258.main(args);
+        Problem02000s.Prob2606.main(args);
+        Problem02000s.Prob2667.main(args);
+        Problem07000s.Prob7576.main(args);
+        Problem07000s.Prob7569.main(args);
+        Problem02000s.Prob2206.main(args);
     }
 }
