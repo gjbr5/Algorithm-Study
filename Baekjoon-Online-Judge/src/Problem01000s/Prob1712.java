@@ -12,5 +12,6 @@ public class Prob1712 {
             System.out.println(-1);
         else // 공식에 대입
             System.out.println(a / (c - b) + 1);
+        in.close();
     }
 }

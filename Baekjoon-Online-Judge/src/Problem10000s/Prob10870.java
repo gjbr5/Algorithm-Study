@@ -13,5 +13,6 @@ public class Prob10870 {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
         System.out.println(fibonacci(in.nextInt()));
+        in.close();
     }
 }

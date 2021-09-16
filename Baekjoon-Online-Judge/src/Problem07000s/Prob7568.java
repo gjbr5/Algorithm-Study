@@ -27,5 +27,6 @@ public class Prob7568 {
             }
             System.out.println(cnt);
         }
+        in.close();
     }
 }

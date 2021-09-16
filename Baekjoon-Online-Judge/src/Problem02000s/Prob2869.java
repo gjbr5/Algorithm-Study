@@ -15,5 +15,6 @@ public class Prob2869 {
         } else {
             System.out.println((v - b) / (a - b) + 1);
         }
+        in.close();
     }
 }

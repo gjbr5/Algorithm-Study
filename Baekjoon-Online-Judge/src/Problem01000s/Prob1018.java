@@ -37,5 +37,6 @@ public class Prob1018 {
             }
         }
         System.out.println(min);
+        in.close();
     }
 }

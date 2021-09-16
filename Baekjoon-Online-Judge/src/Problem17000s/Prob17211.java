@@ -28,5 +28,6 @@ public class Prob17211 {
         }
         System.out.println(Math.round(good * 1000));
         System.out.println(Math.round(bad * 1000));
+        in.close();
     }
 }
