@@ -1,22 +1,34 @@
 {
-    // IntelliSense를 사용하여 가능한 특성에 대해 알아보세요.
-    // 기존 특성에 대한 설명을 보려면 가리킵니다.
-    // 자세한 내용을 보려면 https://go.microsoft.com/fwlink/?linkid=830387을(를) 방문하세요.
     "version": "0.2.0",
-    "configurations": [    
+    "configurations": [
+        {
+            "name": "Node.js: Launch",
+            "type": "pwa-node",
+            "program": "${file}",
+            "request": "launch",
+            "skipFiles": [
+                "<node_internals>/**"
+            ]
+        },
         {
             "name": "Java: Launch",
             "type": "java",
             "request": "launch",
             "mainClass": "${file}",
-            "args": ["<", "${workspaceFolder}/build/input.txt"]
+            "args": [
+                "<",
+                "${workspaceFolder}/build/input.txt"
+            ]
         },
         {
             "name": "Python: Launch",
             "type": "python",
             "request": "launch",
             "program": "${file}",
-            "args": ["<", "${workspaceFolder}/build/input.txt"],
+            "args": [
+                "<",
+                "${workspaceFolder}/build/input.txt"
+            ],
             "console": "integratedTerminal"
         },
         {
@@ -24,7 +36,10 @@
             "type": "cppdbg",
             "request": "launch",
             "program": "${workspaceFolder}/build/a.out",
-            "args": ["<", "${workspaceFolder}/build/input.txt"],
+            "args": [
+                "<",
+                "${workspaceFolder}/build/input.txt"
+            ],
             "preLaunchTask": "${defaultBuildTask}",
             "stopAtEntry": false,
             "cwd": "${fileDirname}",
